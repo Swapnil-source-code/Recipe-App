@@ -124,3 +124,42 @@ h3{
   color: red;
 }
 
+
+@media screen and (max-width:500px) {
+  .container{
+    font-size: 14px;
+  }
+}
+
+ /* Media Query for Mobile Devices */
+ @media (max-width: 480px) {
+  .container{
+    padding: 1.5em 1.2em;
+  }
+  .search-container input {
+    width: inherit;
+  }
+  #show-recipe {
+    font-size: 0.9em;
+    left: 36%;
+    padding: 0.5em 0.6em;
+    top: 1em;
+  }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 768px) {
+  .container{
+    padding: 1.5em 1.5em;
+  }
+  img {
+    width: 40%;
+    margin: 1.8em auto 0 auto;
+  }
+  #show-recipe {
+    left: 40%;
+    top: 1em;
+    padding: 0.6em 0.6em;
+  }
+}
+
